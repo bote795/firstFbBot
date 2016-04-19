@@ -1,0 +1,26 @@
+{
+  "name": "first-facebook-bot",
+  "version": "0.0.1",
+  "description": "my test facebook bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bote795/firstFbBot.git"
+  },
+  "keywords": [
+    "messenger"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bote795/firstFbBot/issues"
+  },
+  "homepage": "https://github.com/bote795/firstFbBot#readme",
+  "dependencies": {
+    "http": "0.0.0",
+    "messenger-bot": "^2.1.0"
+  }
+}
