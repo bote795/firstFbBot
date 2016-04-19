@@ -4,7 +4,7 @@ const Bot = require('messenger-bot')
 const auth = require('./credentials.js')
 
 let bot = new Bot({
-  token: auth.token,
+  token: process.env.token || auth.token,
   verify: 'VERIFY_TOKEN'})
 
 bot.on('error', (err) => {
