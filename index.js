@@ -1,7 +1,7 @@
 'use strict'
 const http = require('http')
 const Bot = require('messenger-bot')
-const auth = require('./credentials.js')
+//const auth = require('./credentials.js')
 
 let bot = new Bot({
   token: process.env.token || auth.token,
