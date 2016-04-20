@@ -29,6 +29,6 @@ bot.on('message', (payload, reply) => {
   })
 })
 
-http.createServer(bot.middleware()).listen(3000, "0.0.0.0")
-console.log('Echo bot server running at port 3000.')
+http.createServer(bot.middleware()).listen(8080, "0.0.0.0")
+console.log('Echo bot server running at port 8080.')
 
