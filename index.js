@@ -1,7 +1,7 @@
 'use strict'
 const http = require('http')
 const Bot = require('messenger-bot')
-//const auth = require('./credentials.js')
+const auth = require('./credentials.js')
 
 let bot = new Bot({
   token: process.env.token || auth.token,
@@ -29,6 +29,6 @@ bot.on('message', (payload, reply) => {
   })
 })
 
-http.createServer(bot.middleware()).listen(8080, "0.0.0.0")
-console.log('Echo bot server running at port 8080.')
+http.createServer(bot.middleware()).listen(3000, "0.0.0.0")
+console.log('Echo bot server running at port 3000.')
 
